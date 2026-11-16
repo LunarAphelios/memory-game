@@ -9,6 +9,7 @@
 
 - ##Game description
 - Player must pick and match all cards to their respective pairs before time runs out!
+If the player gets all the correct matches, they win!
 
 ### Sprint 1
 
