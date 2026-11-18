@@ -1,6 +1,33 @@
-body {
-    background-image: url('./assets/starry-sky.jpg');
-    background-size: cover;
+Copy
+:root {
+  --color-primary: #0f766e;
+  --color-primary-hover: #115e59;
+
+  --color-background: #f1f5f9;
+  --color-surface: #ffffff;
+  --color-text: #172033;
+
+  --color-success: #67ae81;
+  --color-error: #b91c1c;
+}
+* {
+  box-sizing: border-box;
 }
 
+body {
+  background-color: #f1f5f9;
+  background-image: url(./assets/blue-sky.jpg);
+  background-size: auto;
+  color: #172033;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  margin: 0px;
+  padding: 20px 0;
+  min-height: 100vh; 
+  min-height: 100dvh;
+}
+
+button {
+  font: inherit;
+}
 
