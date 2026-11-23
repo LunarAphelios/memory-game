@@ -5,15 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory Game</title>
     <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <script src="./app.js" defer></script>
+    <h1>Memory Game</h1>
+    <h2>How to play:</h2>
+    <section id="instructions">
+        
+        <p>Memory/concentration game is a game where you have to match each card to it's correct pair.</p>
+        <p>Pair the cards in less than 3 moves AND before time runs out to win!</p>
+    </section>
 </head>
 <body>
-    <h1>Memory Game</h1>
+    
     <button id="start">Start</button>
     <button id="again" disabled>Play Again</button>
     <br />
     
-    <p id="message">Message area</p>
+    <p id="message"></p>
     <div id="wrong-label">wrong moves:</div>
     <h3 id="wrong-counter"></h3>
     <div id="timer-label">time remaining</div>

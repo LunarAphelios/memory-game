@@ -371,6 +371,7 @@ cardElements[11].addEventListener('click',(event) =>{
 
 startButton.addEventListener('click',() =>{
     startButton.disabled = true;
+    playAgainButton.disabled = true;
     cardElements.forEach(element => {
         element.classList.remove('time-up')
     });
