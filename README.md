@@ -11,6 +11,10 @@
 - Player must pick and match all cards to their respective pairs before time runs out!
 If the player gets all the correct matches, they win!
 
+## Credits
+
+The arcade-style button CSS (Start and Play Again) and Font in this project was created with the help of [Claude](https://claude.ai), an AI assistant made by [Anthropic](https://www.anthropic.com).
+
 ### Sprint 1
 
 Goal: The player can choose and flip the cards they pick.

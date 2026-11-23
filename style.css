@@ -12,17 +12,28 @@ Copy
 }
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+    font-family:"Press Start 2P", monospace ;
+    text-align: center;
+    padding-top: 25px;
 }
 
 body {
+    min-height: 0;
+    flex: 1;
+    overflow: hidden;
   background-color: #f1f5f9;
-  background-image: url(./assets/blue-sky.jpg);
-  background-size: auto;
+  background-image: url(./assets/background.png);
+  background-size: cover;
   color: #172033;
-  font-family: system-ui, sans-serif;
+  font-family: "Press Start 2P", monospace;
   line-height: 1.5;
   margin: 0px;
-  padding: 20px 0;
+  padding: 20px 60px;
   min-height: 100vh; 
   min-height: 100dvh;
 }
@@ -80,5 +91,21 @@ button {
 
 #again:disabled{
      transform: translateY(6px);
-  box-shadow: 0 2px 0 #0a6fa8;
+    color: #8a8fa3;
+  background: #3a3d4d;
+  border-color: #23252f;
+  box-shadow: 0 4px 0 #23252f;
+  cursor: not-allowed;
+  opacity: .7;
+}
+
+#instructions{
+    font-size: small;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
 }

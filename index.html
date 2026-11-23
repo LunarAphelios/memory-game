@@ -9,11 +9,11 @@
     <script src="./app.js" defer></script>
     <h1>Memory Game</h1>
     <h2>How to play:</h2>
-    <section id="instructions">
+    <div id="instructions">
         
         <p>Memory/concentration game is a game where you have to match each card to it's correct pair.</p>
-        <p>Pair the cards in less than 3 moves AND before time runs out to win!</p>
-    </section>
+        <p>Pair the cards in less than 5 moves AND before time runs out to win!</p>
+    </div>
 </head>
 <body>
     
@@ -21,54 +21,56 @@
     <button id="again" disabled>Play Again</button>
     <br />
     
-    <p id="message"></p>
-    <div id="wrong-label">wrong moves:</div>
-    <h3 id="wrong-counter"></h3>
-    <div id="timer-label">time remaining</div>
-    <h3 id="time"></h3>
+    <p id="message">-</p>
+    <div id="wrong-label">wrong moves: </div>
+    <h3 id="wrong-counter">-</h3>
+    
+    <div id="timer-label">time remaining <h3 id="time">-</h3></div>
+    
     <div class="cards">
         <div class="card">
             <button class="btn" >
-            <img src="./assets/card-back.jpg" alt="card back" id="0"  class="game-card time-up" width="200">
+            <img src="./assets/card-back.png" alt="card back" id="0"  class="game-card time-up" width="150">
             </button>
             <button class="btn" >
-            <img src="./assets/card-back.jpg" alt="card back" id="1"  class="game-card time-up" width="200">
+            <img src="./assets/card-back.png" alt="card back" id="1"  class="game-card time-up" width="150">
             </button>
             <button class="btn" >
-            <img src="./assets/card-back.jpg" alt="card back" id="2"  class="game-card time-up" width="200">
+            <img src="./assets/card-back.png" alt="card back" id="2"  class="game-card time-up" width="150">
             </button>
             <button class="btn" >
-            <img src="./assets/card-back.jpg" alt="card back" id="3"  class="game-card time-up" width="200">
+            <img src="./assets/card-back.png" alt="card back" id="3"  class="game-card time-up" width="150">
+            </button>
+            <button class="btn" >
+            <img src="./assets/card-back.png" alt="card back" id="4"  class="game-card time-up" width="150">
+            </button>
+            <button class="btn" >
+            <img src="./assets/card-back.png" alt="card back" id="5"  class="game-card time-up" width="150">
             </button>
         </div>
         <div class="card">
+            
+            
             <button class="btn" >
-            <img src="./assets/card-back.jpg" alt="card back" id="4"  class="game-card time-up" width="200">
+            <img src="./assets/card-back.png" alt="card back" id="6"  class="game-card time-up" width="150">
             </button>
             <button class="btn" >
-            <img src="./assets/card-back.jpg" alt="card back" id="5"  class="game-card time-up" width="200">
-            </button>
-            <button class="btn" >
-            <img src="./assets/card-back.jpg" alt="card back" id="6"  class="game-card time-up" width="200">
-            </button>
-            <button class="btn" >
-            <img src="./assets/card-back.jpg" alt="card back" id="7"  class="game-card time-up" width="200">
+            <img src="./assets/card-back.png" alt="card back" id="7"  class="game-card time-up" width="150">
             </button> 
-        </div>
-        <div class="card">
             <button class="btn" >
-            <img src="./assets/card-back.jpg" alt="card back" id="8"  class="game-card time-up" width="200">
+            <img src="./assets/card-back.png" alt="card back" id="8"  class="game-card time-up" width="150">
             </button>
             <button class="btn" >
-            <img src="./assets/card-back.jpg" alt="card back" id="9"  class="game-card time-up" width="200">
+            <img src="./assets/card-back.png" alt="card back" id="9"  class="game-card time-up" width="150">
            </button>
             <button class="btn" >
-            <img src="./assets/card-back.jpg" alt="card back" id="10"  class="game-card time-up" width="200">
+            <img src="./assets/card-back.png" alt="card back" id="10"  class="game-card time-up" width="150">
             </button>
             <button class="btn" >
-            <img src="./assets/card-back.jpg" alt="card back" id="11"  class="game-card time-up" width="200">
+            <img src="./assets/card-back.png" alt="card back" id="11"  class="game-card time-up" width="150">
             </button>
         </div>
+        
 
 
     </div>
