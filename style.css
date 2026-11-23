@@ -34,4 +34,6 @@ button {
 .no-click {
     pointer-events: none;
 }
-
+.time-up {
+    pointer-events : none;
+}
