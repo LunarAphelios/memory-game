@@ -14,10 +14,12 @@ const matchSoundElement = new Audio("./assets/match-sound.wav");
 const wrongSoundElement = new Audio("./assets/wrong-sound.wav");
 const gameOverSoundElement = new Audio("./assets/game-over-sound.wav");
 const winSoundElement = new Audio("./assets/win-sound.wav");
+const BgMusicElement = document.querySelector('#music');
+
 
 //VARIABLES
 const cardBack = "./assets/card-back.png"
-
+BgMusicElement.volume = 0.3 ;
 
 playAgainButton.disabled = true;
 
@@ -51,7 +53,7 @@ function countDown(){
             messageElement.textContent = "you win!"
             winSoundElement.currentTime = 0;
             winSoundElement.play();
-            
+
             clearInterval(timer);
             timerElement.textContent = " ";
             cardElements.forEach(element => {
