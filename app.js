@@ -10,12 +10,15 @@ const timerLabelElement = document.querySelector('#timer-label');
 const wrongLabelElement = document.querySelector('#wrong-label');
 const wrongCounterElement = document.querySelector('#wrong-counter');
 
-
+const matchSoundElement = new Audio("./assets/match-sound.wav");
+const wrongSoundElement = new Audio("./assets/wrong-sound.wav");
+const gameOverSoundElement = new Audio("./assets/game-over-sound.wav");
+const winSoundElement = new Audio("./assets/win-sound.wav");
 
 //VARIABLES
 const cardBack = "./assets/card-back.png"
 
-
+playAgainButton.disabled = true;
 
 let firstCard = null;
 let secondCard = null;
@@ -58,7 +61,9 @@ function countDown(){
         if (wrongMovesCounter >= 5)
         {
             messageElement.textContent = "you lose!"
-            
+            gameOverSoundElement.currentTime = 0;
+            gameOverSoundElement.play();
+
             clearInterval(timer);
             timerElement.textContent = " ";
             cardElements.forEach(element => {
@@ -73,8 +78,8 @@ function countDown(){
         if(count === 0){
             clearInterval(timer);
             messageElement.textContent = "time's up ! you lose";
-             
-    
+            gameOverSoundElement.currentTime = 0;
+            gameOverSoundElement.play();
             cardElements.forEach(element => {
                 element.classList.add('time-up')
             });
@@ -102,7 +107,8 @@ function matchFound(){
         secondCardName = " ";
 
         messageElement.textContent = "correct match!";
-
+        matchSoundElement.currentTime = 0 ;
+        matchSoundElement.play();
         
     }
     else{
@@ -112,6 +118,8 @@ function matchFound(){
         unflip(secondCard)
     
         messageElement.textContent = "wrong match!";
+        wrongSoundElement.currentTime = 0;
+        wrongSoundElement.play();
         wrongMovesCounter ++ ;
         wrongLabelElement.textContent = "wrong moves: ";
         wrongCounterElement.textContent = wrongMovesCounter;
@@ -395,6 +403,7 @@ playAgainButton.addEventListener('click',() => {
     wrongMovesCounter = 0;
     messageElement.textContent = " ";
     timerLabelElement.textContent = "Time remaining";
+    
     wrongLabelElement.textContent = " ";
     wrongCounterElement.textContent = " ";
 
