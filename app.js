@@ -18,6 +18,7 @@ const winSoundElement = new Audio("./assets/win-sound.wav");
 //VARIABLES
 const cardBack = "./assets/card-back.png"
 
+
 playAgainButton.disabled = true;
 
 let firstCard = null;
@@ -48,6 +49,9 @@ function countDown(){
         if(matchCounter === 6)
         {
             messageElement.textContent = "you win!"
+            winSoundElement.currentTime = 0;
+            winSoundElement.play();
+            
             clearInterval(timer);
             timerElement.textContent = " ";
             cardElements.forEach(element => {
