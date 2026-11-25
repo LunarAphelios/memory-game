@@ -16,7 +16,7 @@ If the player gets all the correct matches, they win!
 
 ### Getting Started
 
-- Open the [link to the game](https://github.com/LunarAphelios/memory-game)
+- Open the [link to the game](https://lunaraphelios.github.io/memory-game/)
 
 - To start the game, press the Start button at the top of the page.
 
